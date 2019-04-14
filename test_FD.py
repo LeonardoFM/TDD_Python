@@ -33,10 +33,10 @@ class Teste_FD(TestCase):
         self.assertEqual(self.FD.k,2*pi/(20*(10./(200.-1.))))
 
     # def test_plot_analytic_wave(self):
-    #     self.assertTrue(self.FD.plot_analytic_wave())
+    #      self.assertTrue(self.FD.plot_analytic_wave())
 
-    # def test_plot_comp(self):
-    #     self.assertTrue(self.FD.plot_compar())
+    def test_plot_comp(self):
+         self.assertTrue(self.FD.plot_compar())
 
     # def test_plot_comp(self):
     #     self.assertTrue(self.FD.plot_number_dof_per_wavelength())
