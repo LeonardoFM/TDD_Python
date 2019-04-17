@@ -3,12 +3,12 @@
 ### Firts project for TDD learning based on seismology numerical methods
 
 
-## The first note commes from Gerard Meszaros preface book - xUnit Test Patterns: refactoring  test code
+## The first note comes from Gerard Meszaros preface book - xUnit Test Patterns: refactoring  test code
 
 "If you look at how most programmers spend their time, you’ll find that
 writing code is actually a small fraction."
 
-## The second reference from Heiner book Igel - Computational seismology: a practical introduction
+## The second reference from Heiner Igel book - Computational seismology: a practical introduction
 
 "For seismologists the calculation of synthetic (or theoretical) seismograms is a key
 activity on the path to a better understanding of the structure of the Earth’s
