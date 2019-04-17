@@ -1,6 +1,6 @@
 from unittest import TestCase,main
 from math import *
-from sismology_SD import Sismology_SD
+from seismology_SD import Seismology_SD
 import matplotlib.pyplot as plt
 
 class Teste_SD(TestCase):
@@ -8,7 +8,7 @@ class Teste_SD(TestCase):
     Test unit class for second derivative simple example using finite difference method
     """
     def setUp(self):
-        self.SD = Sismology_SD(10.,100)
+        self.SD = Seismology_SD(10.,100)
         self.SD.second_derivative_5pts()
         self.SD.second_derivative_3pts()
         self.SD.analytical_second_derivative_solution()

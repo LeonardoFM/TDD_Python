@@ -2,7 +2,7 @@ import numpy as np
 from math import *
 import matplotlib.pyplot as plt
 
-class Sismology_FD():
+class Seismology_FD():
     """
     Example for first derivative using finite difference method (by simology course)
 

@@ -1,6 +1,6 @@
 from unittest import TestCase,main
 from math import *
-from sismology_FD import Sismology_FD
+from seismology_FD import Seismology_FD
 import matplotlib.pyplot as plt
 
 class Teste_FD(TestCase):
@@ -8,7 +8,7 @@ class Teste_FD(TestCase):
     Test unit class for first derivative simple example using finite difference method (by simology course)
     """
     def setUp(self):
-        self.FD = Sismology_FD(10.,200)
+        self.FD = Seismology_FD(10.,200)
         self.FD.firt_derivative()
         self.FD.analytical_derivative_solution()
         self.FD.error()
