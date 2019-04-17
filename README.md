@@ -17,37 +17,29 @@ depending in particular on the assumptions made in the geophysical model.
 In the most general case—an Earth in which the properties vary in three
 dimensions—analytical solutions do not exist."
 
-#### Seismic waves:
+#### Seismic waves introduction:
+If
+  > f = 1Hz frequency, c = 3Km/s  velocity
 
-  > f = 1Hz frequency, c = 3Km/s \approx 10.000 Km/s$ velocity
+and
+  > \lambda = c/f wavelength
 
--> wavelength $\lambda$
-\begin{equation}
-  c = \lambda  f
-\end{equation}
+than the wavelength lambda = 3Km. The number of points per wavelength in grid must be
 
-than the wavelength $\lambda = 3Km$
+  > n_{\lambda} = \lambda/dx
 
-Number of points per wavelength
+**Spatial scales and meshing**
 
-$$ n_{\lambda} = \frac{\lambda}{dx}$$
+For discretization we must have at least 10 grid points per wavelenth. Now, how to discretize the entire Earth to simulate waves with f=1Hz, c = 3Km/s?
 
-\subsection{Spatial scales and meshing}
+  > 10 grid points/ \lambda -> 0.3Km grid spacing
 
-For discretization we must have at least 10 grid points per wavelenth.
-Now, how to discretiza the entire Earth to simulate waves with $f=1Hz$, $c = 3Km/s$?
+*Earth*:
+  > radius r_E = 6.371Km
+  > volume V_E=(4/3)\pi r_E^3 -> V_E/(0.3Km)^3 = 4.10^{13}elements
+  > 8 bytes * 4 *  10^13 = 320 TBytes
 
-10 grid points/$\lambda$ -> 0.3Km grid spacing
-
-Earth:
-  radius $r_E = 6.371Km$
-  volume $V_E=\frac{4}{3}\pi r_E^3$ => $\frac{V_E}{(0.3Km)^3} = 4.10^{13}elements$
-  8 bytes * 4 * $10^13 = 320$TBytes
-
-Dimensionality:
-  Focus: 1D
-
-\subsection{Waves in a discrete world}
+**Waves in a discrete world**
 
 Acoustic wave equation:
 \begin{equation}
