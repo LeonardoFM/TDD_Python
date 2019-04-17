@@ -17,11 +17,9 @@ depending in particular on the assumptions made in the geophysical model.
 In the most general case—an Earth in which the properties vary in three
 dimensions—analytical solutions do not exist."
 
-#
+#### Seismic waves:
 
-Seismic waves:
-
-  $f = 1Hz$ frequency, $c = 3Km/s \approx 10.000 Km/s$ velocity
+  > f = 1Hz frequency, c = 3Km/s \approx 10.000 Km/s$ velocity
 
 -> wavelength $\lambda$
 \begin{equation}
